@@ -29,10 +29,12 @@ sans-serif;
     color: #FFF;
     font-size: 64px;
     font-weight: 800;
-    padding: 24px;
+    /* padding: 24px; */
     width: 596px;
     height: 80px;
-    padding-left: 200px;
+    padding-top: 60px;
+    padding-left: 240px;
+    padding-bottom: 2px;
 
 
 }
@@ -43,15 +45,23 @@ sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    padding-bottom: 30px;
+    padding-top:2px;
 
 }
 
 .header-section input {
-    width: 174px;
+    width: 180px;
     height: 30px;
     margin-bottom: 122px;
     border-radius: 8px;
     background: #FFF;
+}
+.btn-header{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+background: #FF5400;
 }
 
 .navbar {
@@ -60,9 +70,10 @@ sans-serif;
 }
 
 .nav-right {
-    list-style: none;
-    gap: 5px;
-    margin-right: 10%;
+    width: 500px;
+    height: 40px;
+    margin-right: 8%;
+    margin-top: 60px;
 
 }
 
@@ -77,23 +88,44 @@ ul {
 }
 
 .nav-left {
-    margin-left: 15%;
+    width: 300px;
+    height: 60;
+    margin-left: 10%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #131318;
+    font-size: 30px;
+    font-weight: 800;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.nav-left .btn-nav {
+    font-size: 36px;
+    font-weight: 800;
+    color: #FF5400;
 }
 
 
 
 /* Our popular tours */
 .tour-section {
+    border: 1px solid red;
+    width: 1200px;
+    height: 600px;
     display: flex;
     margin-top: 20px;
+    margin-left: 50px;
 }
 
-.popular-tours {
+.tours-content {
     width: 50%;
-    margin: 14px;
+    border: 1px solid gold;
+    width: 600px;
+    height: 400px;
+    margin: 16px;
+    margin-top: 6px;
+    padding-left: 20px;
+
 }
 
 .tour-title {
@@ -103,23 +135,24 @@ ul {
     font-weight: 800;
 }
 
-.tour-text {
-    color: rgba(19, 19, 24, 0.70);
+
+.tour-list {
+    width: 525px;
+    color: #131318b3;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
 
-.tour-style {
-    margin-left: 20px;
-    list-style-type: disc;
-
+.tour-text {
+    color: #131318b3;
+    width: 577px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
-.tour-style p {
-    list-style-type: disc;
-    margin-left: 20px;
-}
 
 .btn-cmn {
     border-radius: 8px;
@@ -146,6 +179,30 @@ section {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+}
+
+.desti-title {
+    color: #131318;
+    width: 478px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+
+.desti-text{
+    color: #131318b3;
+    width: 643px;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+margin: 0 auto;
+padding-bottom: 40px;
+
 }
 
 .img-container {
@@ -162,8 +219,9 @@ section {
     display: flex;
 }
 
-.row img {
-    gap: 10px 10px;
+.img-container img {
+    padding-right: 6px;
+    
 }
 
 .img1 {
@@ -189,6 +247,7 @@ section {
 
 }
 
+
 .img4 {
     position: absolute;
     top: 50%;
@@ -199,8 +258,8 @@ section {
 
 .img5 {
     position: absolute;
-    top: 50%;
-    right: 32%;
+    top: 60%;
+    right: 20%;
     transform: translate(-50%, -50%);
 }
 
@@ -212,10 +271,10 @@ section {
 
 }
 
-.img {
+.img7{
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 44%;
+    right: 34%;
     transform: translate(-50%, -50%);
 
 }
@@ -352,13 +411,61 @@ section {
     border-radius: 8px;
     background: #FF5400;
 }
-.footer-title{
+
+/* footer section */
+.footer-title {
     border: 1px solid greenyellow;
-    width: 1200px;
-    height: 400px;
-    margin: 60px auto;
+    width: 1000px;
+    height: 300px;
+    margin: 30px auto;
     background: #1313180d;
     text-align: center;
+    padding: 50px;
+}
+
+.foot-logo {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-title .btn-cmn {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-text {
+    color: #5A5A5D;
+    width: 769px;
+    height: 52px;
+    /* text-align: center; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 150px;
+}
+
+.foot {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 60px;
+}
+
+.foot-icon {
+    border: 1px soli salmon;
+    width: 174px;
+    height: 24px;
+    padding-top: 50px;
+    margin: 0 auto;
+    gap: 20px;
 
 
+    /* padding-right: 3px; */
+}
+
+.bonus {
+    border: 1px solid aqua;
+    width: 800px;
+    height: 300px;
 }
