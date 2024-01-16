@@ -384,6 +384,7 @@ padding-bottom: 40px;
     width: 672px;
     height: 422px;
     border-radius: 16px;
+    padding-left: 10px;
 }
 
 .save {
@@ -468,4 +469,56 @@ padding-bottom: 40px;
     border: 1px solid aqua;
     width: 800px;
     height: 300px;
+    margin: 0 auto;
+
+}
+/* Media query for samll devices */
+
+@media screen and (max-width:600px) {  
+    .navbar, .footer-title, .news, .tour-section{
+        flex-direction: column;
+        width: 100%;
+    }
+     .header-section, .card-section, .desti-content{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    } 
+
+    .all-input{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 80%;    
+        
+    }
+   .img-container{
+    display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 0;
+   }
+   .row{
+    max-width: 70%;
+    flex-direction: column;
+}
+    .two-div{
+        flex-direction: column;
+    }
+    .footer-text{
+        width: 70%;
+        padding: 10px;
+    }
+    .news{
+        width: 80%;
+        
+    }
+    .news-content, .bonus{
+        width:100%;
+    }
+    .why-best{
+        margin-left: 10px;
+    }
+
+
 }
