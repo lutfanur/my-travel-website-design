@@ -296,9 +296,6 @@ section {
 
 /* Newsletter section */
 .news {
-    border: 1px solid blue;
-    /* width: 300px;
-    height: 100px; */
     display: flex;
 }
 
@@ -336,6 +333,32 @@ section {
     transform: rotate(-19.628deg);
     border-radius: 16px;
     background: #FF5400;
-    position: relative15;
-    z-index: ;
+    position: relative;
+    left: 340px;
+    top: -190px;
+}
+
+.news-content input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: #1313180d;
+
+}
+
+.news-content .btn-cmn {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+}
+.footer-title{
+    border: 1px solid greenyellow;
+    width: 1200px;
+    height: 400px;
+    margin: 60px auto;
+    background: #1313180d;
+    text-align: center;
+
+
 }
