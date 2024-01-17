@@ -19,7 +19,7 @@ sans-serif;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-radius: 16px;
+    /* border-radius: 16px; */
 
 
 
@@ -46,22 +46,34 @@ sans-serif;
     font-weight: 400;
     line-height: 26px;
     padding-bottom: 30px;
-    padding-top:2px;
+    padding-top: 2px;
 
 }
 
-.header-section input {
-    width: 180px;
+.all-input {
+    margin: 0 auto;
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 16px;
+    background: #ffffff4d;
+}
+  
+input {
+    padding: 10px;
+    flex: 1;
+    border-radius: 8px ;
+}
+
+.btn-header {
+    padding: 10px;
     height: 30px;
-    margin-bottom: 122px;
     border-radius: 8px;
-    background: #FFF;
-}
-.btn-header{
-    width: 174px;
-    height: 52px;
-    border-radius: 8px;
-background: #FF5400;
+    background-color: #FF5400;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
 }
 
 .navbar {
@@ -99,11 +111,11 @@ ul {
     justify-content: center; */
 }
 
-.nav-left .btn-nav {
+/* .nav-left .btn-nav {
     font-size: 36px;
     font-weight: 800;
     color: #FF5400;
-}
+} */
 
 
 
@@ -193,15 +205,15 @@ section {
     padding-bottom: 24px;
 }
 
-.desti-text{
+.desti-text {
     color: #131318b3;
     width: 643px;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-margin: 0 auto;
-padding-bottom: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 auto;
+    padding-bottom: 40px;
 
 }
 
@@ -221,7 +233,7 @@ padding-bottom: 40px;
 
 .img-container img {
     padding-right: 6px;
-    
+
 }
 
 .img1 {
@@ -271,7 +283,7 @@ padding-bottom: 40px;
 
 }
 
-.img7{
+.img7 {
     position: absolute;
     top: 44%;
     right: 34%;
@@ -460,64 +472,108 @@ padding-bottom: 40px;
     padding-top: 50px;
     margin: 0 auto;
     gap: 20px;
+}
 
+/* padding-right: 3px; */
 
-    /* padding-right: 3px; */
+.bonus-content {
+    border: 1px solid aqua;
+    width: 800px;
+    height: 200px;
 }
 
 .bonus {
-    border: 1px solid aqua;
-    width: 800px;
-    height: 300px;
-    margin: 0 auto;
-
+    display: flex;
 }
+
+.bo-in {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #FFF;
+    border: 1px solid green;
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px blue;
+}
+
+.hide {
+    display: none;
+}
+
 /* Media query for samll devices */
 
-@media screen and (max-width:600px) {  
-    .navbar, .footer-title, .news, .tour-section{
+@media screen and (max-width:600px) {
+
+    .navbar,
+    .footer-title,
+    .news,
+    .tour-section {
         flex-direction: column;
         width: 100%;
     }
-     .header-section, .card-section, .desti-content{
+
+    .header-section,
+    .card-section,
+    .desti-content {
         display: flex;
         flex-direction: column;
         width: 80%;
-    } 
-
-    .all-input{
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        width: 80%;    
-        
     }
-   .img-container{
-    display: flex;
+
+
+    .all-input {
+        flex-direction: column;
+        /* padding: 0;
+        margin: 0; */
+        width: 80%;
+
+    }
+
+    .img-container {
+        display: flex;
         flex-direction: column;
         width: 30%;
         margin-left: 0;
-   }
-   .row{
-    max-width: 70%;
-    flex-direction: column;
-}
-    .two-div{
+    }
+
+    .row {
+        max-width: 70%;
         flex-direction: column;
     }
-    .footer-text{
+
+    .two-div {
+        flex-direction: column;
+    }
+
+    .footer-text {
         width: 70%;
         padding: 10px;
     }
-    .news{
+
+    .news {
         width: 80%;
-        
+
     }
-    .news-content, .bonus{
-        width:100%;
+
+    .news-content,
+    .bonus {
+        width: 100%;
     }
-    .why-best{
+
+    .why-best,
+    .header-section {
         margin-left: 10px;
+    }
+
+    .header-title {
+        padding-left: 20px;
+    }
+
+    .all-input {
+        width: 70%;
+
     }
 
 
