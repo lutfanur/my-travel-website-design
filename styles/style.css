@@ -9,23 +9,22 @@ sans-serif;
 }
 
 /* header styles */
-.header-section {
-    border: 2px solid orange;
-    width: 1170px;
-    height: 500px;
+.header{
     margin-left: 150px;
-    background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
-    background-repeat: no-repeat;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    /* border-radius: 16px; */
-
-
+    padding-bottom: 50px;
 
 }
+.header-section {
+   
+    background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
+}
 
-.header-title {
+
+.header-title{
     color: #FFF;
     font-size: 64px;
     font-weight: 800;
@@ -33,7 +32,7 @@ sans-serif;
     width: 596px;
     height: 80px;
     padding-top: 60px;
-    padding-left: 240px;
+    padding-left: 100px;
     padding-bottom: 2px;
 
 
@@ -51,11 +50,13 @@ sans-serif;
 }
 
 .all-input {
+    width: 800px;
+    height:84px ;
     margin: 0 auto;
     display: inline-flex;
     padding: 16px;
     align-items: flex-start;
-    gap: 24px;
+    gap: 20px;
     border-radius: 16px;
     background: #ffffff4d;
 }
@@ -121,9 +122,7 @@ ul {
 
 /* Our popular tours */
 .tour-section {
-    border: 1px solid red;
-    width: 1200px;
-    height: 600px;
+
     display: flex;
     margin-top: 20px;
     margin-left: 50px;
@@ -292,11 +291,11 @@ section {
 }
 
 /* Why choose us */
-.card-section {
-    border: 2px solid orangered;
+.card{
+    /* border: 2px solid orangered; */
     width: 60%;
     height: 70%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .two-div {
@@ -498,83 +497,61 @@ section {
     box-shadow: 0 0 10px blue;
 }
 
-.hide {
-    display: none;
-}
+
 
 /* Media query for samll devices */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) 
 
-    .navbar,
-    .footer-title,
-    .news,
-    .tour-section {
+
+    .navbar, .all-input, .nav-left, .nav-right, ul{
         flex-direction: column;
+    }
+    .navbr, .header-section, .nav-left,
+    .nav-right, .header-title{
         width: 100%;
+        height: 100%;
     }
-
-    .header-section,
-    .card-section,
-    .desti-content {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-
-    .all-input {
-        flex-direction: column;
-        /* padding: 0;
-        margin: 0; */
-        width: 80%;
-
-    }
-
-    .img-container {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-left: 0;
-    }
-
-    .row {
-        max-width: 70%;
-        flex-direction: column;
-    }
-
-    .two-div {
-        flex-direction: column;
-    }
-
-    .footer-text {
-        width: 70%;
-        padding: 10px;
-    }
-
-    .news {
-        width: 80%;
-
-    }
-
-    .news-content,
-    .bonus {
-        width: 100%;
-    }
-
-    .why-best,
-    .header-section {
+    .header-section{
         margin-left: 10px;
-    }
-
-    .header-title {
-        padding-left: 20px;
-    }
-
-    .all-input {
-        width: 70%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 20px;
 
     }
+    .header-title{
+        /* padding-left: 10px;
+        padding-top: 10px;
+        margin: 0 auto;
+    } */
+    .nav-right{
+        text-align: center;
+    ;
+    
+    }
+    .all-input{
+        /* gap: 5px;
+        width: 40%;
+        height: 10%;
+        padding: 5px; */
+    }
+    .ul{
+        gap: 6px;
+        width: 100%;
+        height: 100%;
 
-
+    }
+    .nav-left{
+        margin-left: 0;
+        
+       
+ 
+    }
 }
+
+
+
+
+   
+
+
